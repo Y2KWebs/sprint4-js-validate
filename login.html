@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="margin-top: 2em; margin-bottom: 2em">Login</h1>
+      <form
+        method="GET"
+        action="logineado.html"
+        id="myFormId"
+        onsubmit="return loginValidate()"
+        name="myForm"
+      >
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input
+              type="text"
+              name="inputEmail"
+              class="form-control"
+              id="inputEmail"
+            />
+            <div class="invalid-feedback" id="errorEmail"></div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputPassword">Contrasenya</label>
+            <input
+              type="password"
+              name="inputPassword"
+              class="form-control"
+              id="inputPassword"
+            />
+            <div class="invalid-feedback" id="errorPassword"></div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+
+    <script src="validate.js" type="text/javascript"></script>
+  </body>
+</html>
